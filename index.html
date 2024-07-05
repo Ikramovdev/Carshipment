@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,40 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Carshipment</title>
 </head>
+
 <body>
     <header class="site-header">
         <div class="container">
             <div class="header">
-                <a href="/">
-                    <img class="header__img" src="./images/site-logo.svg" alt="site-logo" width="245" height="43">
+                <a href="">
+                    <img class="header__logo" src="./images/site-logo.svg" alt="site-logo" width="245" height="43.3">
                 </a>
                 <div class="header__content-wrapper">
                     <ul class="header__list nav">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Home</a>
+                            <a class="header__link" href="">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Services</a>
+                            <a class="header__link" href="">Services</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">About Us</a>
+                            <a class="header__link" href="">About US</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Shipping Methods</a>
+                            <a class="header__link" href="">Shipping Methods</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">FAQ</a>
+                            <a class="header__link" href="">FAQ</a>
                         </li>
                     </ul>
-                    <a class="nav__phone-link" href="te:2242182949">
-                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="38" height="38" rx="19" fill="#FF7D44"/>
-                            <path d="M13.62 17.79C15.06 20.62 17.38 22.94 20.21 24.38L22.41 22.18C22.69 21.9 23.08 21.82 23.43 21.93C24.55 22.3 25.75 22.5 27 22.5C27.2652 22.5 27.5196 22.6054 27.7071 22.7929C27.8946 22.9804 28 23.2348 28 23.5V27C28 27.2652 27.8946 27.5196 27.7071 27.7071C27.5196 27.8946 27.2652 28 27 28C22.4913 28 18.1673 26.2089 14.9792 23.0208C11.7911 19.8327 10 15.5087 10 11C10 10.7348 10.1054 10.4804 10.2929 10.2929C10.4804 10.1054 10.7348 10 11 10H14.5C14.7652 10 15.0196 10.1054 15.2071 10.2929C15.3946 10.4804 15.5 10.7348 15.5 11C15.5 12.25 15.7 13.45 16.07 14.57C16.18 14.92 16.1 15.31 15.82 15.59L13.62 17.79Z" fill="white"/>
-                        </svg>    
-                        <span>224-218-2949</span>
+                    <a class="header__phone-link" href="tel:2242182949">
+                        <svg width="39" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="38" height="38" rx="19" fill="#FF7D44" />
+                            <path
+                                d="M13.62 17.79C15.06 20.62 17.38 22.94 20.21 24.38L22.41 22.18C22.69 21.9 23.08 21.82 23.43 21.93C24.55 22.3 25.75 22.5 27 22.5C27.2652 22.5 27.5196 22.6054 27.7071 22.7929C27.8946 22.9804 28 23.2348 28 23.5V27C28 27.2652 27.8946 27.5196 27.7071 27.7071C27.5196 27.8946 27.2652 28 27 28C22.4913 28 18.1673 26.2089 14.9792 23.0208C11.7911 19.8327 10 15.5087 10 11C10 10.7348 10.1054 10.4804 10.2929 10.2929C10.4804 10.1054 10.7348 10 11 10H14.5C14.7652 10 15.0196 10.1054 15.2071 10.2929C15.3946 10.4804 15.5 10.7348 15.5 11C15.5 12.25 15.7 13.45 16.07 14.57C16.18 14.92 16.1 15.31 15.82 15.59L13.62 17.79Z"
+                                fill="white" />
+                        </svg>
+                        <span class="header__phone-number">224-218-2949</span>
                     </a>
                 </div>
             </div>
@@ -47,34 +51,317 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-                    <form class="hero__form form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
-                        <h2 class="form__title">Shipping Cost Calculator</h2>
-                        <p class="form__text">Get your estimate quote in seconds</p>
-                        <span class="form__line"></span>
+                    <form class="hero__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+                        <div class="form__title-wrapper">
+                            <h2 class="form__title">Shipping Cost Calculator</h2>
+                            <p class="form__text">Get your estimate quote in seconds</p>
+                        </div>
                         <label class="form__label">
-                            <span> From</span>
-                            <input class="form__input" type="number" name="user-location" placeholder="Select ZIP code or location" required>
+                            <span class="form__span">From </span>
+                            <input class="form__input" type="number" name="from"
+                                placeholder="Select ZIP code or location" required>
                         </label>
                         <label class="form__label">
-                            <span>To</span>
-                            <input class="form__input" type="number" name="user-location" placeholder="Select ZIP code or location" required>
+                            <span class="form__span">To </span>
+                            <input class="form__input" type="number" name="from"
+                                placeholder="Select ZIP code or location" required>
                         </label>
                         <label class="form__label">
-                           <span> Estimate time</span>
-                            <input class="form__input calendar" type="date" name="user-date-time" placeholder="Select estimate time" required>
+                            <span class="form__span">Estimate time </span>
+                            <input class="form__input" type="number" name="from" placeholder="Select estimate time"
+                                required>
                         </label>
-                        <span class="form__bottom-span"></span>
-                        <a class="form__btn" href="/">Get Shipment estimate</a>
+                        <div class="form__radio-wrapper">
+                            <span>Transport type</span>
+                            <div class="form__input-radio-wrapper radio">
+                                <label class="radio__label">
+                                    <input class="radio__check-input visually-hidden" type="radio" name="type">
+                                    <div class="radio__circle"></div>
+                                    <span class="radio__content">Open</span>
+                                </label>
+                                <label class="radio__label">
+                                    <input class="radio__check-input visually-hidden" type="radio" name="type">
+                                    <div class="radio__circle"></div>
+                                    <span class="radio__content">Enclosed</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="hero__btn" type="submit">Get Shipment estimate</button>
                     </form>
                     <div class="hero__content-wrapper">
-                        <div class="hero__strong-title">
-                            <img class="hero__content-img" src="./images/star.svg" alt="star" width="24" height="24">
-                            <strong class="hero__strong">World Top Rated Shipping Company</strong>
+                        <div class="hero__content-top-wrapper">
+                            <img src="./images/star.svg" alt="star" width="24" height="24">
+                            <p>World Top Rated Shipping Company</p>
                         </div>
                         <h1 class="hero__title">Transportation Services that you can trust</h1>
                         <p class="hero__text">Transport your vehicle with PROs.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container service">
+                <div class="service__content-wrapper">
+                    <h2 class="service__title">Our Services</h2>
+                    <p class="service__text">Optimum Auto Shipping is specialized in shipping different type of ...</p>
+                </div>
+                <ul class="service__list">
+                    <li class="service__item">
+                        <img class="service__img" src="./images/porsche.png" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">Car Shipments</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="./images/moto.avif" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">Motorcycle shipments</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="./images/tractor.avif" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">Heavy Equipment</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="./images/shep.avif" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">HI/ AK Shipments</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="./images/yaxta.avif" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">Boat Shipments</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="./images/curier.avif" alt="porsche img">
+                        <div class="service__item-wrapper">
+                            <h3 class="service__subtitle">Door to Door delivery</h3>
+                            <a class="service__item-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 6.00005C0.5 5.78456 0.585603 5.5779 0.737976 5.42553C0.890349 5.27315 1.09701 5.18755 1.3125 5.18755H10.7261L7.23725 1.7003C7.08468 1.54773 6.99897 1.34081 6.99897 1.12505C6.99897 0.90929 7.08468 0.702366 7.23725 0.5498C7.38982 0.397234 7.59674 0.311523 7.8125 0.311523C8.02826 0.311523 8.23518 0.397234 8.38775 0.5498L13.2628 5.4248C13.3384 5.50027 13.3984 5.58993 13.4394 5.68865C13.4804 5.78736 13.5015 5.89318 13.5015 6.00005C13.5015 6.10692 13.4804 6.21274 13.4394 6.31145C13.3984 6.41016 13.3384 6.49983 13.2628 6.5753L8.38775 11.4503C8.23518 11.6029 8.02826 11.6886 7.8125 11.6886C7.59674 11.6886 7.38982 11.6029 7.23725 11.4503C7.08468 11.2977 6.99897 11.0908 6.99897 10.8751C6.99897 10.6593 7.08468 10.4524 7.23725 10.2998L10.7261 6.81255H1.3125C1.09701 6.81255 0.890349 6.72695 0.737976 6.57457C0.585603 6.4222 0.5 6.21554 0.5 6.00005Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="service__hide-wrapper">
+                            <h3>Car Shipments</h3>
+                            <p> One of the most widely-known segment of the freight industry is Auto Transport</p>
+                            <a class="service__hide-link" href="#">
+                                <p>Read more</p>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5.99999C0.5 5.7845 0.585603 5.57784 0.737976 5.42547C0.890349 5.27309 1.09701 5.18749 1.3125 5.18749H10.7261L7.23725 1.70024C7.08468 1.54767 6.99897 1.34075 6.99897 1.12499C6.99897 0.909229 7.08468 0.702305 7.23725 0.549739C7.38982 0.397173 7.59674 0.311462 7.8125 0.311462C8.02826 0.311462 8.23518 0.397173 8.38775 0.549739L13.2628 5.42474C13.3384 5.50021 13.3984 5.58987 13.4394 5.68858C13.4804 5.7873 13.5015 5.89312 13.5015 5.99999C13.5015 6.10686 13.4804 6.21268 13.4394 6.31139C13.3984 6.4101 13.3384 6.49976 13.2628 6.57524L8.38775 11.4502C8.23518 11.6028 8.02826 11.6885 7.8125 11.6885C7.59674 11.6885 7.38982 11.6028 7.23725 11.4502C7.08468 11.2977 6.99897 11.0907 6.99897 10.875C6.99897 10.6592 7.08468 10.4523 7.23725 10.2997L10.7261 6.81249H1.3125C1.09701 6.81249 0.890349 6.72689 0.737976 6.57451C0.585603 6.42214 0.5 6.21548 0.5 5.99999Z"
+                                        fill="#FF7D44" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="work-section">
+            <div class="container">
+                <div class="work">
+                    <div class="work__content-wrapper">
+                        <h2 class="work__title">We're PROs at what we DO</h2>
+                        <p class="work__text">Hire professional carriers for your shipments needs</p>
+                    </div>
+                    <ul class="work__list">
+                        <li class="work__item">
+                            <span class="work__item-span"></span>
+                            <strong class="work__item-strong">10K</strong>
+                            <p class="work__text">Client Served</p>
+                        </li>
+                        <li class="work__item">
+                            <span class="work__item-span"></span>
+                            <strong class="work__item-strong">23K</strong>
+                            <p class="work__text">Vehicle shipped</p>
+                        </li>
+                        <li class="work__item">
+                            <span class="work__item-span"></span>
+                            <strong class="work__item-strong">96%</strong>
+                            <p class="work__text">Satisfied customer</p>
+                        </li>
+                        <li class="work__item">
+                            <span class="work__item-span"></span>
+                            <strong class="work__item-strong">7+</strong>
+                            <p class="work__text">Years in operation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="About">
+                    <div class="about__wrapper">
+                        <div class="about-title__wrapper top">
+                            <strong>About<span>Us</span></strong>
+                            <p>Optimum Auto Transport is a vehicle shipping company in the USA. We make sure that our professional drivers serve customers with very high quality. Our priorities are putting customers’ satisfaction first place.</p>
+                        </div>
+                        <img src="./images/about-trucks.png" alt="about-trucks" width="543" height="333">
+                    </div>
+                    <div class="about__botttom-wrapper">
+                        <img src="./images/about-coworkers.png" alt="about-trucks" width="543" height="333">
+                        <div class="about-title__wrapper">
+                            <strong>Our<span>Mission</span></strong>
+                            <p>Our Mission is to help people to ship their cars from state to state SAFE, FAST, and AFFORDABLE way. We make sure your vehicle will be picked up on time and delivered on time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="method-section">
+            <div class="container method">
+                <div class="methon__title-wrapper">
+                    <h2 class="method__title">Shipping <span>Method</span></h2>
+                    <p class="method__text">Car transportation services can fall under several different categories depending on the shipping company employed to move the car. Vehicle transport services may use any number of transportation methods to get a vehicle from one point to another.</p>
+                </div>
+                <ul class="method__list">
+                    <li class="method__item">
+                        <img src="./images/method-vagons.png" alt="method-vagons" width="542" height="297">
+                        <div class="method__item-text-wrapper">
+                            <h3 class="method__subtitle">Rail Transport</h3>
+                            <p class="method__item-text">Railway shipping companies focus on getting cars from one point to another using the vast interconnected rail network around the US. They are either shipped open-air or within freight containers. It's a pretty quick way of getting a car from one point to another, but the speed has its attached cost. Unfortunately, because of the complexities of rail transport, not every shipping company offers rail freight as an option.</p>
+                            <a class="method__item-btn" href="#">Get Free Quotes</a>
+                        </div>
+                    </li>
+                    <li class="method__item">
+                        <a class="method__item-img-link" href="#">Most popular</a>
+                        <img class="method__item-img" src="./images/truck.png" alt="method-truck" width="542" height="297">
+                        <div class="method__item-text-wrapper">
+                            <h3 class="method__subtitle">Truck Transport</h3>
+                            <p class="method__item-text">One of the most well-known vehicle shipping services that you'll find is ordinary truck transport. It's a basic way to transport a car and takes a little more time. However, the vehicle gets to its destination safe and sound. It’s also the most convenient method of moving a car between locations. Another advantage of a truck is that the truck can get right up to the final point before the owner gets the car.</p>
+                            <a class="method__item-btn" href="#">Get Free Quotes</a>
+                        </div>
+                    </li>
+                    <li class="method__item">
+                        <img src="./images/plane.png" alt="method-plane" width="542" height="297">
+                        <div class="method__item-text-wrapper">
+                            <h3 class="method__subtitle">Air Transport</h3>
+                            <p class="method__item-text">Another category of vehicle transport service is air transport. This is the fastest way to get a car from origin to destination, regardless of where in the US it is. On the other hand, air transport is much more expensive and may cost quite a lot, depending on where the car needs to be delivered. The safest way to move a car is by air, and there are many airports and airstrips across the state, so it's simple to discover one with a landing strip close to you.</p>
+                            <a class="method__item-btn" href="#">Get Free Quotes</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

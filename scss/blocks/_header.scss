@@ -1,0 +1,86 @@
+// Header styles start
+.site-header {
+    padding: 30px 0;
+    background-color: #0000004D;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__link {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: 0.3s all linear;
+
+    &:hover {
+        color: #FF7D44;
+    }
+}
+
+.header__link:hover {
+    color: #FF7D44;
+}
+
+.header__phone-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & svg>rect,
+    & svg>path {
+        transition: 0.3s all linear;
+    }
+
+    &:hover>svg>rect {
+        fill: white;
+    }
+
+    &:hover>svg>path {
+        fill: #FF7D44;
+    }
+
+    &:hover>.header__phone-number {
+        color: #FF7D44;
+    }
+}
+
+.header__phone-number {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: 0.3s all linear;
+}
+
+// Header styles end
