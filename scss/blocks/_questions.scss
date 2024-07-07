@@ -1,0 +1,123 @@
+.questions-seection {
+    padding: 80px 0 75px 0;
+}
+.questions__title-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.questions__title {
+    margin-bottom: 15px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0%;
+}
+.questions__title > span {
+    padding-right: 5px;
+    color: #FF7D44;
+}
+.questions__text {
+    color: #000000AD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.questions__list {
+    width: 732px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.questions__item {
+    padding-bottom: 25px;
+    overflow: hidden;
+    border-bottom: 1px solid #D9D9D9;
+}
+.dropdown__heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.dropdown__subtitle {
+    color: #000000DE;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+.dropdown__line-wrapper {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.dropdown__line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+    transition: 0.3s all linear;
+}
+.line2{
+    transform: rotate(90deg);
+}
+.twoitemline2{
+    transform: rotate(90deg);
+}
+.threeitemline3{
+    transform: rotate(90deg);
+}
+.fouritemline4{
+    transform: rotate(90deg);
+}
+.dropdown__hide-content {
+    padding-top: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+.dropdown__hide-text {
+    color: #000000AD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.show{
+    padding-top: 13px;
+    height: 72px;
+    opacity: 1;
+}
+.show2{
+    padding-top: 13px;
+    height: 72px;
+    opacity: 1;
+}
+.show3{
+    padding-top: 13px;
+    height: 72px;
+    opacity: 1;
+}
+.show4{
+    padding-top: 13px;
+    height: 72px;
+    opacity: 1;
+}
+.rotate{
+    transform: rotate(0deg);
+}
+.rotate2{
+    transform: rotate(0deg);
+}
+.rotate3{
+    transform: rotate(0deg);
+}
+.rotate4{
+    transform: rotate(0deg);
+}

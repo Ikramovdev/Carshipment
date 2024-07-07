@@ -12,25 +12,14 @@
     margin-bottom: 80px;
 }
 .method__title {
-    margin-bottom: 15px;
+    @include textstyle($mb:15px,$clr:#182F43,$fs:38px,$fw:700,$lh:46px,$case:capitalize);
     padding-left: 3px;
-    color: #182F43;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: 0%;
-
     & > span {
         color: #FF7D44;
     }
 }
 .method__text {
-    color: #000000AD;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-
+    @include textstyle($mb:15px,$clr:#000000AD,$fs:16px,$fw:400,$lh:24px,$case:none);
 }
 .method__list {
     display: flex;
@@ -38,10 +27,7 @@
     gap: 50px;
 }
 .method__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    @include display ($items:center,$space:space-between,$gap:24px);
 }
 .method__item-img-link{
     position: absolute;
@@ -50,11 +36,8 @@
     padding: 16px 0;
     text-align: center;
     background-color: #FF7D44;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0%;
+    @include textstyle($mb:0,$clr:rgb(37, 28, 28),$fs:16px,$fw:600,$lh:19px,$case:none);
+
 }
 .method__item-img {
     position: relative;
@@ -70,39 +53,15 @@
     flex-direction: column;
 }
 .method__subtitle {
-    margin-bottom: 15px;
-    color: #000000DE;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0%;
+    @include textstyle($mb:15px,$clr:#000000DE,$fs:24px,$fw:600,$lh:29px,$case:capitalize);
 }
 .method__item-text {
-    margin-bottom: 30px;
-    color: #000000AD;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    @include textstyle($mb:30px,$clr:#000000AD,$fs:16px,$fw:400,$lh:24px,$case:none);
 }
 .method__item-btn {
-    width: 259px;
-    padding: 15px 0;
-    text-align: center;
-    border: 1px solid #FF7D44;
-    background-color: transparent;
-    border-radius: 3px;
-    color: #000000DE;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    transition: 0.3s all linear;
+    @include buttonstyle($btn_w:259px,$btn_p:15px,$btn_br_radius:3px,$btn_bg-clr:transparent,$btn_border_clr:#FF7D44,$btn_text_clr: #000000DE,$btn_fs:16px,$btn_fw:500,$btn_case:uppercase,$btn_lh:19px);
 
     &:hover{
-        border: 1px solid transparent;
-        background-color:#FF7D44 ;
-        color: white;
+        @include buttonstyle($btn_w:259px,$btn_p:15px,$btn_br_radius:3px,$btn_bg-clr:#FF7D44,$btn_border_clr:transparent,$btn_text_clr:white,$btn_fs:16px,$btn_fw:500,$btn_case:uppercase,$btn_lh:19px);
     }
 }

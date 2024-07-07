@@ -11,9 +11,7 @@
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   @include display($items:center,$space:space-between,$gap:0,)
 }
 
 .header__logo {
@@ -21,24 +19,15 @@
 }
 
 .header__content-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    @include display($items:center,$space:none,$gap:50px,)
 }
 
 .header__list {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    @include display($items:center,$space:none,$gap:25px,)
 }
 
 .header__link {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
+    @include textstyle($mb:none,$clr:white,$fs:16px,$fw:500,$lh:19x,$case:uppercase);
     transition: 0.3s all linear;
 
     &:hover {
@@ -51,9 +40,7 @@
 }
 
 .header__phone-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include display($items:center,$space:none,$gap:10px,);
 
     & svg>rect,
     & svg>path {
@@ -74,12 +61,7 @@
 }
 
 .header__phone-number {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
+    @include textstyle($mb:none,$clr:white,$fs:16px,$fw:500,$lh:19x,$case:uppercase);
     transition: 0.3s all linear;
 }
 

@@ -8,10 +8,7 @@
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    @include display ($items:center,$space:space-between,$gap:0px);
 }
 
 .hero__form {
@@ -28,21 +25,11 @@
 }
 
 .form__title {
-    margin-bottom: 8px;
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0%;
+    @include textstyle($mb:8px,$clr:white,$fs:30px,$fw:700,$lh:36px,$case:capitalize);
 }
 
 .form__text {
-    margin-bottom: 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0%;
+    @include textstyle($mb:20px,$clr:white,$fs:16px,$fw:400,$lh:19px,$case:start);
 }
 
 .form__label {
@@ -52,16 +39,11 @@
 }
 
 .form__label:nth-child(4)>.form__input {
-    background-image: url(../images/calendar.svg);
+    background-image: url("../images/calendar.svg");
 }
 
 .form__span {
-    margin-bottom: 8px;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0%;
+    @include textstyle($mb:8px,$clr:white,$fs:15px,$fw:400,$lh:18px,$case:capitalize);
 }
 
 .form__input {
@@ -82,23 +64,17 @@
 .form__radio-wrapper {
     padding-bottom: 25px;
     border-bottom: 1px solid white;
+    margin-bottom: 20px;
 
 }
 
 .form__radio-wrapper>span {
     display: inline-block;
-    margin-bottom: 8px;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0%;
+    @include textstyle($mb:8px,$clr:white,$fs:15px,$fw:400,$lh:18px,$case:capitalize);
 }
 
 .form__input-radio-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display ($items:center,$space:space-between,$gap:0px);
 }
 
 .radio__label {
@@ -106,9 +82,7 @@
     padding: 15px;
     background-color: white;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    @include display ($items:center,$space:none,$gap:12px);
 }
 
 .radio__circle {
@@ -131,11 +105,7 @@
 }
 
 .radio__content {
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
+    @include textstyle($mb:none,$clr:#000000DE,$fs:17px,$fw:400,$lh:21px,$case:capitalize);
 }
 
 .hero__content-wrapper {
@@ -145,9 +115,7 @@
 
 .hero__content-top-wrapper {
     margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include display ($items:center,$space:none,$gap:10px);
 }
 
 .hero__content-top-wrapper>img {
@@ -155,43 +123,18 @@
 }
 
 .hero__content-top-wrapper>p {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-
+    @include textstyle($mb:0px,$clr:white,$fs:14px,$fw:500,$lh:17px,$case:uppercase);
 }
 
 .hero__title {
-    margin-bottom: 20px;
-    color: white;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 68px;
-    letter-spacing: 0%;
+    @include textstyle($mb:20px,$clr:white,$fs:56px,$fw:700,$lh:68px,$case:none);
 }
 
 .hero__text {
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
+    @include textstyle($mb:0px,$clr:white,$fs:20px,$fw:400,$lh:24px,$case:none);
 }
 .hero__btn{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 24px;
-    border-radius: 8px;
-    background-color: #FF7D44;
-    border: 1px solid transparent;
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0%;
+    @include buttonstyle($btn_w:100%,$btn_py:10px,$btn_br_radius:8px,$btn_bg-clr:#FF7D44,$btn_border_clr:transparent,$btn_text_clr:white,$btn_fs:17px,$btn_fw:500,$btn_case:none,$btn_lh:21px);
     transition: 0.3s all linear;
 }
 .hero__btn:hover{

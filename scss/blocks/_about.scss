@@ -2,15 +2,11 @@
     margin: 100px 0;
 }
 .About {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+    @include display ($items:Center,$space:space-between,$gap:25px);
 }
 .about__wrapper {
-    display: flex;
+    @include display ($items:none,$space:none,$gap:50px);
     flex-direction: column;
-    gap: 50px;
 }
 .about-title__wrapper {
     padding-top: 37px;
@@ -21,22 +17,14 @@
     padding-left: 0;
 }
 .about-title__wrapper > strong {
-    margin-bottom: 16px;
+    @include textstyle($mb:16px,$clr:#000000DE,$fs:38px,$fw:700,$lh:46px,$case:capitalize);
     display: inline-block;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: 0%;
-    color: #000000DE;
 }
 .about-title__wrapper > strong > span {
     padding-left: 5px;
     color:#FF7D44;
 }
 .about-title__wrapper > p{
+    @include textstyle($mb:0,$clr:#000000AD,$fs:16px,$fw:300,$lh:24px,$case:none);
     color:#000000AD;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0%;
 }
